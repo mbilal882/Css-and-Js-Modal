@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Modal using css and Js</title>
+
+</head>
+
+<body>
+    <button class="modal-btn" id="modal-btn">Open Modal</button>
+    <div id="modal">
+        <div class="modal-header">Title</div>
+        <hr>
+        <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate consequuntur repellendus. Atque
+                vitae mollitia veniam fugit voluptatem optio, voluptate necessitatibus laboriosam officia cum dolorum
+                distinctio delectus nulla beatae ex.</p>
+        </div>
+        <hr>
+        <div class="modal-footer">
+            <button class="modal-btn" id="close-btn">Close Modal</button>
+        </div>
+    </div>
+
+    <script>
+        let modal = document.getElementById("modal");
+        let openBtn = document.getElementById("modal-btn");
+        let closeBtn = document.getElementById("close-btn");
+
+        modal.style.display = "none";
+
+        openBtn.onclick = function() {
+            modal.style.display = "block";
+            modal.style.top = "4.5rem";
+        }
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
